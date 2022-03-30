@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="55dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/name_surname"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/errorName"
+                android:layout_width="300dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="55dp"
+                android:text="@string/please_enter_a_valid_name"
+                android:textColor="#FF4747"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/birthText"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/birth_date"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/date"
+                style="?android:spinnerStyle"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="55dp"
+                android:onClick="openDatePicker"
+                android:text="@string/birth_date"
+                android:textColor="#757575"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/errorBirth"
+                android:layout_width="300dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="55dp"
+                android:text="@string/you_must_be_over_18_years_old"
+                android:textColor="#FF4747"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/city"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/errorCity"
+                android:layout_width="300dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="55dp"
+                android:text="@string/please_enter_a_valid_city"
+                android:textColor="#FF4747"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/genderText"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/gender"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/gender"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="55dp"
+                android:dropDownWidth="300dp"
+                android:entries="@array/genders"
+                android:focusedByDefault="false"
+                android:prompt="@string/gender"
+                android:spinnerMode="dialog"
+                android:theme="@style/mySpinnerItemStyle" />
+
+            <TextView
+                android:id="@+id/errorGender"
+                android:layout_width="300dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="55dp"
+                android:text="@string/please_select_a_valid_gender"
+                android:textColor="#FF4747"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/vaccineText"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/vaccine_type"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/vaccine"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginEnd="55dp"
+                android:dropDownWidth="300dp"
+                android:entries="@array/vaccines"
+                android:focusedByDefault="false"
+                android:prompt="@string/vaccine_type"
+                android:spinnerMode="dialog"
+                android:theme="@style/mySpinnerItemStyle" />
+
+            <TextView
+                android:id="@+id/errorVaccine"
+                android:layout_width="300dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="55dp"
+                android:text="@string/please_select_a_valid_vaccine_type"
+                android:textColor="#FF4747"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/check"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/check"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sideEffects"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/side_effect_s_after_vaccination"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/fever"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/side_effect_1"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/tiredness"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/side_effect_2"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/headache"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/side_effect_3"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/musclePain"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/side_effect_4"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/chills"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/side_effect_5"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/nausea"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/side_effect_6"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/other"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/side_effect_7"
+                android:textSize="20sp"
+                android:onClick="checkbox_clicked" />
+
+            <EditText
+                android:id="@+id/specify"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="110dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/specify"
+                android:inputType="textPersonName"
+                android:textColorHint="#757575"
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/other" />
+
+            <TextView
+                android:id="@+id/errorOther"
+                android:layout_width="200dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="115dp"
+                android:text="@string/please_specify"
+                android:textColor="#FF4747"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/after"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="40dp"
+                android:text="@string/after_3rd_vaccination"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/pcr"
+                android:layout_width="275dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/positive_pcr_result"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/symptom"
+                android:layout_width="275dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="55dp"
+                android:text="@string/covid_19_symptoms"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                android:layout_marginBottom="40dp"
+                android:text="@string/send"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

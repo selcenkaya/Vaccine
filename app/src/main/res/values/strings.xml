@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Vaccine Survey</string>
+
+    <string name="name_surname">Name Surname</string>
+    <string name="please_enter_a_valid_name">Please enter a valid name.</string>
+
+    <string name="birth_date">Birth Date</string>
+    <string name="you_must_be_over_18_years_old">You must be over 18 years old.</string>
+
+    <string name="city">City</string>
+    <string name="please_enter_a_valid_city">Please enter a valid city.</string>
+
+    <string name="gender">Gender</string>
+    <string name="please_select_a_valid_gender">Please select a valid gender.</string>
+    <string-array name="genders">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer Not to Specify</item>
+    </string-array>
+
+    <string name="vaccine_type">Vaccine Type</string>
+    <string name="please_select_a_valid_vaccine_type">Please select a valid vaccine type.</string>
+    <string-array name="vaccines">
+        <item>AstraZeneca (Viral Vector)</item>
+        <item>Janssen (Viral Vector)</item>
+        <item>Moderna (mRNA)</item>
+        <item>Pfizer-BioNTech (mRNA)</item>
+        <item>Sinopharm (Inactivated)</item>
+        <item>Sinovac (Inactivated)</item>
+        <item>Sputnik V (Viral Vector)</item>
+    </string-array>
+
+    <string name="check">Check If Applicable</string>
+
+    <string name="side_effect_s_after_vaccination">Side Effect(s) After Vaccination:</string>
+    <string name="side_effect_1">Fever</string>
+    <string name="side_effect_2">Tiredness</string>
+    <string name="side_effect_3">Headache</string>
+    <string name="side_effect_4">Muscle pain</string>
+    <string name="side_effect_5">Chills</string>
+    <string name="side_effect_6">Nausea</string>
+    <string name="side_effect_7">Other</string>
+    <string name="specify">Please Specify</string>
+    <string name="please_specify">Please enter a valid side effect.</string>
+
+    <string name="after_3rd_vaccination">Had After 3rd Vaccination:</string>
+    <string name="positive_pcr_result">Positive PCR Result</string>
+    <string name="covid_19_symptoms">Covid-19 Symptoms</string>
+
+    <string name="send">SEND</string>
+</resources>
